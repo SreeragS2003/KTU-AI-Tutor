@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching for solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Searching for solutions</div>
+    <div class="topic-info">Topic Number: 2.3</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>Searching for Solutions in Artificial Intelligence
+
+This section explores various search techniques used in AI to find solutions to problems.  We've already seen techniques like local search and adversarial search.  The objective of every problem-solving technique is to find a solution to reach a goal.  However, unlike constraint satisfaction (discussed later), these methods don't inherently incorporate constraints on the agents during problem-solving.
+
+**Atomic Representations:**  Many search algorithms operate using atomic representations.  In an atomic representation, each state of the world is indivisible—it has no internal structure.  Consider finding a driving route across a country. We might reduce the state of the world to simply the name of the current city—a single atom of knowledge, a "black box" whose only discernible property is its difference from other cities.  The algorithms underlying search and game-playing, Hidden Markov Models, and Markov Decision Processes all work with atomic representations.
+
+**Constraint Satisfaction Problems:**  Another problem-solving technique is Constraint Satisfaction.  This involves solving a problem under certain constraints or rules.  A problem is solved when its values satisfy these constraints.  This technique provides a deeper understanding of problem structure and complexity.  Constraint satisfaction depends on three components:
+
+*   **X:** A set of variables.
+*   **D:** A set of domains where the variables reside (each variable has a specific domain).
+*   **C:** A set of constraints followed by the set of variables.
+
+In constraint satisfaction, domains are the spaces where variables reside, following problem-specific constraints.  These are the three main elements.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

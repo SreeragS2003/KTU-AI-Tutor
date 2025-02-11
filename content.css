@@ -1,0 +1,25 @@
+/* This section is for the content */
+.content-div{
+    height: 120%;
+    width: 100%;
+    background-color: white;
+    position: absolute;
+    margin-top:50px ;
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+/* syllabus */
+.syllabus-div{
+    background-color: rgb(255,255,255);
+    flex:auto;
+    /* text-align: center; */
+}
+
+/* chat-div */
+.chat-div{
+    background-color: pink;
+    flex:auto;
+    text-align: center;
+}

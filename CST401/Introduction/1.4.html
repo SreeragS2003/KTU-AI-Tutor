@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Agents – Agents and Environments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Intelligent Agents – Agents and Environments</div>
+    <div class="topic-info">Topic Number: 1.4</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Intelligent Agents – Agents and Environments**
+
+This section explores intelligent agents, their interaction with environments, and the characteristics that define their behavior.
+
+**What is an Intelligent Agent?**
+
+An intelligent agent is an autonomous entity that acts upon an environment using sensors and actuators to achieve goals.  An intelligent agent may learn from the environment to achieve its goals. A thermostat is an example of an intelligent agent.
+
+**Four Rules for an AI Agent:**
+
+1.  An AI agent must have the ability to perceive the environment.
+2.  The observation must be used to make decisions.
+3.  Decisions should result in an action.
+4.  The action taken by an AI agent must be a rational action.
+
+**Agent Types:**
+
+*   **Robotic Agent:** A robotic agent can have cameras, infrared range finders, NLP (Natural Language Processing) for sensors and various motors for actuators.
+*   **Software Agent:** A software agent can have keystrokes and file contents as sensory input and act on those inputs, displaying output on the screen.
+
+**Percepts and Agent Function:**
+
+The term *percept* refers to the agent’s perceptual inputs at any given instant. An agent’s *percept sequence* is the complete history of everything the agent has ever perceived.  An agent’s choice of action at any given instant can depend on the entire percept sequence observed to date, but not on anything it hasn’t perceived. An agent’s behavior is described by the agent function that maps any given percept sequence to an action. Internally, the agent function for an artificial agent will be implemented by an agent program.
+
+**Agent Structure:**
+
+The job of AI is to design an agent program that implements the agent function—the mapping from percepts to actions. This program will run on some sort of computing device with physical sensors and actuators called the architecture.  `agent = architecture + program`  The architecture makes the percepts from the sensors available to the program, runs the program, and feeds the program’s action choices to the actuators as they are generated. The agent program uses the current percept as input from the sensors and returns an action to the actuators. The agent function takes the entire percept history.
+
+
+**Table-Driven Approach:**
+
+To build a rational agent, one approach is to construct a table that contains the appropriate action for every possible percept sequence.
+
+
+**Learning Agents:**
+
+(Note:  While not explicitly under the "Agents and Environments" heading in the provided text, the description of learning agents is intrinsically linked to agent behavior within an environment.)  The learning element uses CRITIC feedback from the critic on how the agent is doing and determines how the performance element should be modified to do better in the future. The critic tells the learning element how well the agent is doing with respect to a fixed performance standard. The critic is necessary because the percepts themselves provide no indication of the agent’s success. The problem generator suggests actions that will lead to new and informative experiences.
+
+**Representations:**
+
+We can place representations along an axis of increasing complexity and expressive power: atomic, factored, and structured.  In an atomic representation, each state of the world is indivisible—it has no internal structure.  For example, in finding a driving route, the state of the world might be reduced to just the name of the city—a single atom of knowledge. Algorithms underlying search and game-playing, Hidden Markov models, and Markov decision processes all work with atomic representations.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

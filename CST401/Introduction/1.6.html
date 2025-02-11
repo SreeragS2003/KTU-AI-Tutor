@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The nature of Environments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">The nature of Environments</div>
+    <div class="topic-info">Topic Number: 1.6</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**1.6 The Nature of Environments**
+
+Task environments are essentially the "problems" to which rational agents are the "solutions."  A task environment is used to specify the performance measure, the environment itself, and the agent's actuators and sensors. We can represent this using the PEAS framework, which stands for Performance measure, Environment, Actuators, Sensors.  The PEAS system categorizes similar agents and delivers the performance measure with respect to the environment, actuators, and sensors of the respective agent.  Most high-performing agents are Rational Agents.
+
+* **P: Performance measure:** The objective for the success of an agent's behavior. Desirable qualities include getting to the correct destination; minimizing fuel consumption and wear and tear; minimizing trip time or cost; minimizing violations of traffic laws and disturbances to other drivers; maximizing safety and passenger comfort; maximizing profits.  Tradeoffs are often required because some goals conflict.
+
+* **E: Environment:**  This encompasses everything outside the agent. For example, a self-driving car's environment includes roads, other vehicles, road signs, and pedestrians. A taxi driver's environment includes a variety of roads (rural lanes, urban alleys, freeways), other traffic, pedestrians, animals, road works, police cars, weather conditions, and passengers.
+
+* **A: Actuators:** These are the actions an agent can perform.  For a self-driving car, actuators include steering, accelerator, brake, signal, and horn.
+
+* **S: Sensors:** These are how an agent perceives its environment. For a self-driving car, sensors include cameras, GPS, speedometer, odometer, accelerometer, and sonar.
+
+
+**PEAS for Self-Driving Cars:**
+
+* **Performance:** Safety, time, legal drive, comfort
+* **Environment:** Roads, other vehicles, road signs, pedestrians
+* **Actuators:** Steering, accelerator, brake, signal, horn
+* **Sensors:** Camera, GPS, speedometer, odometer, accelerometer, sonar
+
+
+**Properties of Task Environments:**
+
+An environment in artificial intelligence is the surrounding of the agent. The agent takes input from the environment through sensors and delivers output to the environment through actuators.  Several properties characterize environments:
+
+* **Fully Observable vs. Partially Observable:** A fully observable environment allows the agent's sensor to access the complete state at each point in time; otherwise, it's partially observable.  Maintaining a fully observable environment is easy because there's no need to track history. An unobservable environment has no sensors.  Examples: Chess (fully observable) vs. Driving (partially observable).
+
+* **Deterministic vs. Stochastic:** A deterministic environment's next state is completely determined by the current state and the agent's action. A stochastic environment is random; the next state cannot be completely determined. Examples: Chess (deterministic) vs. Self-Driving Cars (stochastic).
+
+* **Single-agent vs. Multi-agent:** A single-agent environment contains only one agent; a multi-agent environment contains more than one. A person in a maze is a single-agent system.
+
+* **Static vs. Dynamic:** A static environment doesn't change while the agent is deliberating; a dynamic environment does.
+
+* **Discrete vs. Continuous:** A discrete environment has a finite number of states and actions; a continuous environment has an infinite number.
+
+* **Episodic vs. Sequential:** In an episodic environment, the agent's experience is divided into atomic episodes; in a sequential environment, the current decision affects future decisions.
+
+* **Known vs. Unknown:**  A known environment is one where the agent knows the results of its actions; an unknown environment is one where it doesn't.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

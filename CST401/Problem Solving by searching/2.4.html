@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uninformed search strategies:BFS, Uniform-cost search, DFS, Depth-limited search, Iterative deepening depth-first search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Uninformed search strategies:BFS, Uniform-cost search, DFS, Depth-limited search, Iterative deepening depth-first search</div>
+    <div class="topic-info">Topic Number: 2.4</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Uninformed Search Strategies**
+
+Uninformed search, also known as blind search, does not utilize domain-specific knowledge like the goal's location or proximity.  It operates using brute-force methods, focusing solely on traversing the search tree and identifying leaf and goal nodes.  The search tree is explored without information about the search space, including the initial state, operators, and goal test.  Each node is examined until the goal node is reached.
+
+Five main types of uninformed search exist:
+
+* **Breadth-First Search (BFS):** BFS is a common strategy for traversing trees or graphs.  It searches breadthwise, starting from the root node and expanding all successor nodes at the current level before moving to the next level.  BFS is a general-graph search algorithm implemented using a FIFO (First-In, First-Out) queue data structure.
+
+    * **Advantages:** BFS guarantees a solution if one exists.  If multiple solutions exist, it finds the minimal solution (requiring the fewest steps).
+    * **Disadvantages:**  It requires substantial memory as each level of the tree must be stored to expand the next.  It can be time-consuming if the solution is far from the root node.
+
+* **Uniform-Cost Search:**  (Details not provided in text)
+
+* **Depth-First Search (DFS):** (Details not provided in text)
+
+* **Depth-Limited Search:** (Details not provided in text)
+
+* **Iterative Deepening Depth-First Search (IDDFS):** IDDFS combines the advantages of BFS and DFS regarding speed and memory efficiency.
+
+    * **Advantages:** Combines benefits of BFS and DFS.
+    * **Disadvantages:** Repeats work from previous iterations.
+    * **Completeness:** Complete if the branching factor is finite.
+    * **Time Complexity:** O(b<sup>d</sup>) where 'b' is the branching factor and 'd' is the depth.
+    * **Space Complexity:** O(bd)
+    * **Optimality:** Optimal if the path cost is a non-decreasing function of node depth.
+
+
+**Informed Search Algorithms (briefly mentioned for context):**
+
+In contrast to uninformed search, informed search algorithms utilize knowledge such as distance from the goal, path cost, and routes to the goal node. This knowledge allows for more efficient exploration of the search space.  Informed search is particularly useful for large search spaces and often employs heuristics.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimal decisions in games, The Minimax algorithm</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Optimal decisions in games, The Minimax algorithm</div>
+    <div class="topic-info">Topic Number: 3.2</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Optimal Decisions in Games: The Minimax Algorithm**
+
+The Minimax algorithm is a recursive or backtracking algorithm used in decision-making and game theory.  It provides an optimal move for a player, assuming the opponent is also playing optimally.  The algorithm searches through the game tree using recursion.  It's commonly used in two-player games like Chess, Checkers, tic-tac-toe, and Go.
+
+**How Minimax Works:**
+
+Two players participate: MAX and MIN.  MAX aims to maximize its payoff, while MIN aims to minimize MAX's payoff.  MAX selects the maximized value, and MIN selects the minimized value. The algorithm performs a depth-first search of the game tree, exploring all the way to terminal nodes before backtracking.
+
+**Pseudo-code for MinMax Algorithm:**
+
+```
+function minimax(node, depth, maximizingPlayer) is   
+  if depth == 0 or node is a terminal node then   
+    return static evaluation of node   
+```
+
+**(Note: The provided text cuts off the pseudocode before it is complete.)**
+
+**Types of Games:**
+
+* **Deterministic games:** These follow strict rules and patterns, with no randomness. Examples include chess, checkers, Go, and tic-tac-toe.
+* **Non-deterministic games:** These incorporate unpredictable events and chance elements (dice, cards).  Examples include backgammon, Monopoly, and poker.  These are also called stochastic games.
+
+**Properties of the Minimax Algorithm:**
+
+* **Complete:**  It finds a solution (if one exists) in a finite search tree.
+* **Optimal:** It's optimal if both opponents play optimally.
+* **Time Complexity:** O(bm), where 'b' is the branching factor and 'm' is the maximum depth of the game tree (due to its depth-first search nature).
+* **Space Complexity:** O(bm), similar to depth-first search.
+
+**Limitations of the Minimax Algorithm:**
+
+The main drawback is its slow performance for complex games like chess and Go, which have enormous branching factors.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adversarial search - Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Adversarial search - Games</div>
+    <div class="topic-info">Topic Number: 3.1</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Adversarial Search - Games**
+
+Adversarial search examines problems where planning must account for other agents actively working against you.  Unlike single-agent search strategies focusing on finding a solution through a sequence of actions, adversarial search involves multiple agents competing within the same search space—a common scenario in game playing.  This multi-agent environment pits each agent against others, requiring each to consider opponents' actions and their impact on its own performance.
+
+Adversarial searches, often called games, are characterized by two or more players with conflicting goals exploring the same search space.  Games are modeled using a search problem and a heuristic evaluation function; these are key to modeling and solving games in AI.
+
+**Types of Games in AI:**
+
+Games are categorized based on the presence of deterministic or chance moves and perfect or imperfect information:
+
+* **Deterministic, Perfect Information:**  Chess, Checkers, Go, Othello.  In these games, agents have complete knowledge of the game state (the "board") and can see each other's moves.
+
+* **Deterministic, Imperfect Information:** Battleships, Blind Man's Bluff, Tic-Tac-Toe. Here, agents lack complete information about the game state.
+
+* **Chance Moves, Perfect Information:** Backgammon, Monopoly.  These games involve elements of chance (e.g., dice rolls) in addition to players' actions, but the state of the game is still fully observable.
+
+* **Chance Moves, Imperfect Information:** Bridge, Poker, Scrabble, Nuclear War.  These games combine both chance and incomplete information.
+
+
+**Perfect Information:**  A game with perfect information allows agents to see the complete game board and all previous moves.
+
+**Imperfect Information:**  A game with imperfect information means agents don't have all the information, and are unaware of everything that's happening.
+ </github-md>
+    <div class="back-link"><a href="../syllabus_structure.html">Back to Syllabus</a></div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

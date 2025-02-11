@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informed search strategies: Best First search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Informed search strategies: Best First search</div>
+    <div class="topic-info">Topic Number: 2.5</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Informed Search Strategies: Best-First Search**
+
+Best-first search is an informed search strategy that combines aspects of both depth-first and breadth-first search.  It uses a heuristic function to guide the search, selecting the path that appears most promising at each step.  This allows it to leverage the advantages of both depth-first and breadth-first search.
+
+**How Best-First Search Works:**
+
+At each iteration, best-first search expands the node that is estimated to be closest to the goal node. This closeness is estimated using a heuristic function, denoted as *h(n)*, which estimates the cost of an optimal path from node *n* to the goal.  The best-first search algorithm uses the heuristic function to select the node with the lowest estimated cost.  In this context, the evaluation function is f(n) = h(n).
+
+**Best-First Search Algorithm:**
+
+1. Place the starting node into the OPEN list.
+2. If the OPEN list is empty, stop and return failure.
+3. Remove the node *n* from the OPEN list which has the lowest value of *h(n)*, and place it in the CLOSED list.
+4. Expand node *n*, and generate its successors.
+5. Check each successor of node *n* to determine if any is a goal node. If a successor node is a goal node, return success and terminate the search. Otherwise, continue.
+
+
+**Implementation:**
+
+The greedy best-first algorithm is typically implemented using a priority queue to efficiently manage the OPEN list, allowing for quick retrieval of the node with the lowest heuristic value.  The algorithm continues until a goal state is found or the OPEN list is exhausted.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

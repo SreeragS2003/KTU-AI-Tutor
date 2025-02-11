@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration of the problem solving process by agents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Illustration of the problem solving process by agents</div>
+    <div class="topic-info">Topic Number: 2.2</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>## Illustration of the Problem Solving Process by Agents
+
+The design of an agent program is central to Artificial Intelligence (AI).  The agent program implements the agent function – a mapping from percepts to actions (Ihsana Muhammed, Page 18).  This program runs on an architecture comprising physical sensors and actuators:  `agent = architecture + program` (Ihsana Muhammed, Page 18). The architecture makes sensor percepts available to the program, executes the program, and transmits the program's actions to the actuators. The agent program uses the current percept as input from sensors and returns an action to the actuators. The agent function, however, considers the entire percept history.
+
+One approach to building a rational agent is the table-driven approach (Ihsana Muhammed, Page 18).  This involves creating a table that specifies the appropriate action for every possible percept sequence.  However, this approach becomes impractical for complex environments with numerous possible percept sequences.
+
+More sophisticated agents employ different problem-solving strategies.  For instance, a learning agent incorporates a learning element, a critic, and a problem generator (Ihsana Muhammed, Page 25). The learning element uses feedback from the critic to modify the performance element, improving future actions.  The critic evaluates the agent's performance against a fixed standard, crucial because percepts alone don't indicate success. The problem generator suggests actions leading to new, informative experiences.
+
+Goal-based agents (Ihsana Muhammed, Page 22) go beyond simply reacting to the current state. They require a goal description representing desirable situations (e.g., reaching a passenger's destination in a taxi scenario). The agent combines this goal information with a model of the environment to choose actions that achieve the goal.
+
+The representation of the world within the agent also influences problem-solving.  Representations can range in complexity from atomic to factored to structured (Ihsana Muhammed, Page 25).  An atomic representation treats each world state as indivisible, lacking internal structure.  For example, in finding a driving route, the current city might be represented as a single atom of knowledge (Ihsana Muhammed, Page 25).  Algorithms like those underlying search, game-playing, Hidden Markov Models, and Markov Decision Processes often use atomic representations.  More complex representations, such as factored and structured representations, allow for a more nuanced understanding of the world state, facilitating more sophisticated problem-solving.  The choice of representation significantly impacts the agent's ability to effectively solve problems.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

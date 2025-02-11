@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solving Problems by searching-Problem solving Agents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Solving Problems by searching-Problem solving Agents</div>
+    <div class="topic-info">Topic Number: 2.1</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>## Solving Problems by Searching: Problem-Solving Agents
+
+Problem-solving agents are a type of goal-based agent.  They utilize atomic representations; meaning the states of the world are considered as wholes, with no internal structure visible to the problem-solving algorithms (Ihsana Muhammed, CST401: Artificial Intelligence). Goal-based agents that employ more advanced factored or structured representations are typically called planning agents.  Goals are crucial for organizing behavior by limiting the objectives the agent pursues and, consequently, the actions it needs to consider.
+
+**Steps Required to Solve a Problem:**
+
+1.  **Goal Formulation:** This step involves defining a target or goal that requires actions to achieve, based on AI agents and the current situation. The goal is formulated as a set of world states where the goal is satisfied.
+
+2.  **Problem Formulation:** This step determines the actions necessary to achieve the formulated goal.
+
+3.  **Reaching from Initial State to Goal State:**  Actions, or operators, cause transitions between world states.  These actions should be abstract enough to avoid excessive detail and uncertainty. For example, "turn left" is preferable to "turn left 30 degrees," as the latter introduces unnecessary complexity.
+
+**Atomic Representation:**
+
+In an atomic representation, each state of the world is indivisible, lacking internal structure (Ihsana Muhammed, CST401: Artificial Intelligence).  For instance, in finding a driving route across a country, the state of the world might be reduced to simply the name of the current city—a single atom of knowledge.  Algorithms such as those underlying search and game-playing, Hidden Markov models, and Markov decision processes all utilize atomic representations.
+
+**Searching for Solutions:**
+
+The course will cover both uninformed and informed search strategies:
+
+**Uninformed Search Strategies:**
+
+*   Breadth-First Search (BFS)
+*   Uniform-cost search
+*   Depth-First Search (DFS)
+*   Depth-limited search
+*   Iterative deepening depth-first search
+
+**Informed Search Strategies:**
+
+*   Best-First search
+*   A\* Search
+
+**Heuristics:**  (Further details on heuristics will be provided in the course.)
+
+**Constraint Satisfaction Problems:**
+
+Another problem-solving technique is constraint satisfaction.  This involves solving problems under specific constraints or rules.  Constraint satisfaction relies on three components:
+
+*   X: A set of variables.
+*   D: A set of domains where the variables reside (each variable has a specific domain).
+*   C: A set of constraints followed by the set of variables.  Domains are the spaces where the variables exist, adhering to problem-specific constraints.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

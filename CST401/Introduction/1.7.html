@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The structure of Agents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">The structure of Agents</div>
+    <div class="topic-info">Topic Number: 1.7</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>## The Structure of Agents
+
+The job of AI is to design an agent program that implements the agent function: the mapping from percepts to actions (Ihsana Muhammed, Page 18). This program runs on a computing device with physical sensors and actuators, called the architecture.  The relationship is defined as:  agent = architecture + program.  The architecture makes percepts from sensors available to the program, runs the program, and feeds the program's action choices to the actuators. The agent program uses the current percept as input from the sensors and returns an action to the actuators. The agent function takes the entire percept history as input.
+
+One approach to building a rational agent is the table-driven approach.  This involves constructing a table that contains the appropriate action for every possible percept sequence (Ihsana Muhammed, Page 18).
+
+A more complex agent design incorporates learning.  The learning element uses critic feedback to determine how the performance element should be modified to improve future performance. The critic assesses the agent's performance against a fixed standard, since percepts alone don't indicate success (Ihsana Muhammed, Page 25).  A problem generator suggests actions leading to new and informative experiences.
+
+Agent program components can be categorized by representational complexity: atomic, factored, and structured.  Atomic representation treats each world state as indivisible, lacking internal structure.  An example is representing the state of a route-finding problem simply by the name of the current city (Ihsana Muhammed, Page 25). Algorithms like those used in search, game-playing, Hidden Markov Models, and Markov Decision Processes often utilize atomic representations.
+
+Goal-based agents require more than just knowledge of the current state.  They also need goal information describing desirable situations (Ihsana Muhammed, Page 22).  For example, a taxi needs to know its current location and its destination to make informed decisions at a road junction.  The agent program combines the current state description with a model and goal information to choose actions that achieve the goal.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

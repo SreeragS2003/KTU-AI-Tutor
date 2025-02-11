@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ course.course_title }}</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .course-title {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .module-title {
+            font-size: 20px;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        .topic-title {
+            font-size: 16px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="course-title">{{ course.course_title }}</div>
+
+    {% for module in course.modules %}
+    <div class="module-title">
+        Module: {{ module.module_title }} (Duration: {{ module.duration }})
+    </div>
+
+    <ul>
+        {% for topic in module.topics %}
+        <li class="topic-title">
+            <a href="./CST401/{{module.module_title }}/{{ topic.number }}.html">
+                Topic {{ topic.number }}: {{ topic.title }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    {% endfor %}
+
+</body>
+
+
+
+</html>

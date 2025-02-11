@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illustration of the problem solving process by agents</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Illustration of the problem solving process by agents</div>
+    <div class="topic-info">Topic Number: 2.2</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>## Illustration of the Problem Solving Process by Agents
+
+Agent programs implement the agent function, mapping percepts to actions [Ihsana Muhammed, Page 18].  This program runs on an architecture consisting of physical sensors and actuators:  `agent = architecture + program` [Ihsana Muhammed, Page 18]. The architecture provides percepts to the program and executes its action choices through actuators.  The agent program uses current percepts as input and returns actions.  A rational agent requires a mapping from every possible percept sequence to an appropriate action, potentially implemented using a table-driven approach [Ihsana Muhammed, Page 18].
+
+One approach to agent design involves components such as a learning element, a critic, and a problem generator [Ihsana Muhammed, Page 25]. The learning element uses feedback from the critic to improve future performance. The critic evaluates the agent's performance against a fixed standard, which is necessary because percepts alone don't indicate success. The problem generator suggests actions leading to new and informative experiences.
+
+Agent programs can utilize different representations of the world, ranging in complexity: atomic, factored, and structured [Ihsana Muhammed, Page 25].  Atomic representations treat each world state as indivisible, like representing a driving route by only the current city – a "black box" [Ihsana Muhammed, Page 25].  Algorithms such as those used in search, game-playing, Hidden Markov Models, and Markov Decision Processes often work with atomic representations.
+
+Goal-based agents require not only a current state description but also goal information specifying desirable situations [Ihsana Muhammed, Page 22].  The agent program combines this goal information with a model of the environment to select actions achieving the goal.  For example, at a road junction, knowing the destination is crucial for deciding which way to turn.  The agent program shown in the figure (not included here, as it's a visual element from the provided text) includes an UPDATE-STATE component responsible for creating new internal state descriptions [Ihsana Muhammed, Page 22].  The design of the agent is also influenced by the environment; a more restricted environment simplifies the design problem [Ihsana Muhammed, Page 15].  For instance, an automated taxi's actuators include engine, steering, and braking controls, along with output for passenger communication [Ihsana Muhammed, Page 15].  Its sensors include cameras, infrared/sonar sensors, speedometer, accelerometer, engine/fuel/electrical system sensors, and GPS [Ihsana Muhammed, Page 15].  The specific sensors and actuators are chosen based on the needs of the task.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

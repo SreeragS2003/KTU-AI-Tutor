@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constraint Satisfaction Problems – Defining CSP</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Constraint Satisfaction Problems – Defining CSP</div>
+    <div class="topic-info">Topic Number: 3.4</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Constraint Satisfaction Problems – Defining CSP**
+
+Constraint satisfaction is a problem-solving technique where a problem is solved when its values satisfy certain constraints or rules.  This technique leads to a deeper understanding of the problem structure and its complexity.
+
+A Constraint Satisfaction Problem (CSP) depends on three components:
+
+*   **X:** A set of variables.
+*   **D:** A set of domains where the variables reside. Each variable has a specific domain.
+*   **C:** A set of constraints followed by the set of variables.
+
+In constraint satisfaction, domains are the spaces where the variables reside, following problem-specific constraints.  The constraint value consists of a pair of {scope, rel}. The scope is a tuple of variables participating in the constraint, and rel is a relation including a list of values the variables can take to satisfy the problem's constraints.
+
+**Solving Constraint Satisfaction Problems**
+
+To solve a CSP, we need:
+
+*   A state-space
+*   The notion of a solution
+
+A state in the state-space is defined by assigning values to some or all variables, such as {X1=v1, X2=v2, and so on…}.
+
+Variable value assignments can be:
+
+*   **Consistent or Legal Assignment:** An assignment that does not violate any constraint or rule.
+*   **Complete Assignment:** An assignment where every variable is assigned a value, and the solution to the CSP remains consistent.
+*   **Partial Assignment:** An assignment that assigns values to only some of the variables.
+
+**Types of Domains in CSP**
+
+CSPs utilize two types of domains:
+
+*   **Discrete Domain:** An infinite domain that can have one state for multiple variables.  For example, a start state can be allocated infinitely many times for each variable.
+*   **Finite Domain:** A finite domain with continuous states, describing one domain for one specific variable.  It's also called a continuous domain.
+
+**Constraint Types in CSP**
+
+Regarding variables, there are:
+
+*   **Unary Constraints:** The simplest type, restricting the value of a single variable.
+*   **Binary Constraints:** Constraints relating two variables.  For example, a value x2 will contain a value which lies between x1 and x3.
+ </github-md>
+    <div class="back-link"><a href="../syllabus_structure.html">Back to Syllabus</a></div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

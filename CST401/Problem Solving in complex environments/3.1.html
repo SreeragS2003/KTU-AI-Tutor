@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adversarial search - Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Adversarial search - Games</div>
+    <div class="topic-info">Topic Number: 3.1</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>**Adversarial Search - Games**
+
+Adversarial search examines problems where planning must account for other agents acting against us.  Unlike single-agent search strategies focusing on finding a solution through a sequence of actions, adversarial search involves multiple agents competing within the same search space. This commonly occurs in game playing, a multi-agent environment where agents are opponents, each needing to consider the other's actions and their impact on performance.  Searches where two or more players with conflicting goals explore the same search space are called adversarial searches, often referred to as games.
+
+Games are modeled using a search problem and a heuristic evaluation function; these are crucial for modeling and solving games in AI.
+
+**Types of Games in AI:**
+
+The provided notes categorize games based on two factors: Deterministic vs. Chance moves, and Perfect vs. Imperfect information.
+
+* **Deterministic:**  The outcome of each action is completely determined.
+* **Chance Moves:** The outcome of at least some actions involves an element of chance.
+* **Perfect Information:**  Agents have complete knowledge of the game state, including all past moves and the current board. Examples: Chess, Checkers, Go, Othello.
+* **Imperfect Information:** Agents lack complete information about the game state. Examples: Battleships, Bridge, Poker, Scrabble.
+
+
+**Perfect Information:** In games with perfect information, agents can see the complete board and each other's moves.
+
+**Imperfect Information:**  Games where agents don't have complete information about the game state are termed as games with imperfect information.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+    <script>
+        document.getElementById("back-to-syllabus").addEventListener("click", function (event) {
+            event.preventDefault();
+            window.location.href = "../../../index.html";
+        });
+    </script>    
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

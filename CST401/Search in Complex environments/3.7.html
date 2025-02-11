@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The structure of problems</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">The structure of problems</div>
+    <div class="topic-info">Topic Number: 3.7</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>## The Structure of Problems in Artificial Intelligence
+
+This section explores different ways to represent and structure problems within the field of Artificial Intelligence.  The complexity and expressive power of these representations can be placed along an axis: atomic, factored, and structured.
+
+**Atomic Representation:**
+
+In an atomic representation, each state of the world is indivisible; it has no internal structure.  As an example, consider finding a driving route across a country.  The state of the world could be reduced to simply the name of the current city – a single "atom" of knowledge, a "black box" distinguishable only by its difference from other such boxes.  Algorithms like those underlying search, game-playing, Hidden Markov Models, and Markov Decision Processes often utilize atomic representations.
+
+**Problem Solving Techniques and Constraints:**
+
+We've examined various problem-solving techniques such as local search and adversarial search.  While these methods don't explicitly incorporate constraints, another approach, *Constraint Satisfaction*, directly addresses problems with inherent rules or limitations.
+
+Constraint satisfaction involves solving a problem where values must satisfy specific constraints or rules. This approach provides deeper understanding of the problem's structure and complexity.  It depends on three core components:
+
+*   **X:** A set of variables.
+*   **D:** A set of domains where the variables reside (each variable has a specific domain).
+*   **C:** A set of constraints followed by the variables.
+
+In constraint satisfaction, domains define the spaces where variables exist, adhering to problem-specific constraints.  These three elements are fundamental to the technique.
+ </github-md>
+    <div class="back-link"><a href="../syllabus_structure.html">Back to Syllabus</a></div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>

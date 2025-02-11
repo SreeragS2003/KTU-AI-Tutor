@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searching for solutions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .topic-title {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .topic-info {
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topic-title">Searching for solutions</div>
+    <div class="topic-info">Topic Number: 2.3</div>
+    <div class="topic-info">Time Allotted: 1 hours</div>
+    <github-md>Searching for Solutions in Artificial Intelligence
+
+This section explores different techniques for searching for solutions in AI, drawing upon concepts from the provided course notes.  We've seen various approaches, including local search and adversarial search.  The objective of any problem-solving technique is to find a solution that reaches the goal.  However, while local and adversarial search may not have explicit constraints, other methods introduce constraints or rules.
+
+Constraint Satisfaction Problems
+
+Constraint satisfaction is a technique where a problem is solved by finding values that satisfy certain constraints or rules. This approach leads to a deeper understanding of the problem's structure and complexity.  It depends on three components:
+
+*   **X:** A set of variables.
+*   **D:** A set of domains where the variables reside (each variable has a specific domain).
+*   **C:** A set of constraints followed by the set of variables.
+
+In constraint satisfaction, domains are the spaces where variables reside, adhering to problem-specific constraints.  These three elements are key to solving problems using this technique.
+
+Search and Game-Playing with Atomic Representations
+
+The provided notes mention that algorithms underlying search and game-playing utilize atomic representations.  In an atomic representation, each state of the world is indivisible—it has no internal structure.  An example is reducing the state of the world to just the name of the city in a route-finding problem.  The city becomes a "black box," identified only by its difference from other "black boxes."  This simplification allows algorithms to work effectively, even though it lacks detailed information.
+ </github-md>
+    <div class="back-link">
+        <a href="#" id="back-to-syllabus">Back to Syllabus</a>
+    </div>
+</body>
+
+</html>
+<script src="https://cdn.jsdelivr.net/gh/MarketingPipeline/Markdown-Tag/markdown-tag.js"></script>
