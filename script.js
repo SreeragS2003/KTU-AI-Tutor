@@ -49,3 +49,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+document.querySelector(".go-to-syllabus").addEventListener("click", function () {
+    fetch("./CST401/syllabus_structure.html")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.querySelector(".syllabus-div").innerHTML = data;
+        })
+        .catch(error => console.error("Error loading syllabus:", error));
+});
