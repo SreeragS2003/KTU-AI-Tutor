@@ -25,3 +25,27 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading syllabus:", error));
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const syllabusDiv = document.querySelector(".syllabus-div");
+
+    // Function to load new content into the div
+    function loadContent(url) {
+        fetch(url)
+            .then(response => response.text())
+            .then(data => {
+                syllabusDiv.innerHTML = data;
+            })
+            .catch(error => console.error("Error loading content:", error));
+    }
+
+    // Event delegation for handling clicks inside the content div
+    syllabusDiv.addEventListener("click", (event) => {
+        if (event.target.tagName === "A") {
+            event.preventDefault(); // Stop the default link behavior
+            const url = event.target.getAttribute("href"); // Get href attribute
+            loadContent(url); // Fetch new content
+        }
+    });
+
+});
